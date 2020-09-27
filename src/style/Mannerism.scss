@@ -1,0 +1,542 @@
+/*文字颜色*/
+
+$color-wz1: #303133; //主要文字
+$color-wz2: #606266; //常规文字
+$color-wz3: #909399; //次要文字
+$color-wz4: #C0C4CC; //占位文字
+
+/*背景颜色*/
+
+$color-bg1: #FFFFFF; //一级背景
+$color-bg2: #f5f5f5; //二级背景
+$color-bg3: rgba(0, 0, 0, 0.8);
+; //三级背景
+
+/*边框颜色*/
+
+$color-box1: #DCDFE6; //一级边框
+$color-box2: #E4E7ED; //二级边框
+$color-box3: #EBEEF5; //三级边框
+$color-box4: #F2F6FC; //四级边框
+
+/*文字大小*/
+
+$size-wz1: 16px; //主要文字
+$size-wz2: 17px; //常规文字
+$size-wz3: 18px; //次要文字
+$size-wz4: 24px; //占位文字
+$size-wz5: 36px; //占位文字
+@mixin db {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin dhidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin fl {
+    float: left;
+}
+
+@mixin fr {
+    float: right;
+}
+
+
+/*文字*/
+
+@mixin f12 {
+    font-size: 12px;
+}
+
+@mixin f13 {
+    font-size: 13px;
+}
+
+@mixin f14 {
+    font-size: 14px;
+}
+
+@mixin f16 {
+    font-size: 16px;
+}
+
+@mixin f20 {
+    font-size: 20px;
+}
+
+@mixin fb {
+    font-weight: bold;
+}
+
+@mixin fn {
+    font-weight: normal;
+}
+
+@mixin t2 {
+    text-indent: 2em;
+}
+
+@mixin lh150 {
+    line-height: 150%;
+}
+
+@mixin lh180 {
+    line-height: 180%;
+}
+
+@mixin lh200 {
+    line-height: 200%;
+}
+
+@mixin unl {
+    text-decoration: underline;
+}
+
+@mixin no_un {
+    text-decoration: none;
+}
+
+
+/*定位(参考:https://www@mixin iteye@mixin com/blog/justcoding-2249245) */
+
+@mixin dis {
+    display: flex;
+}
+
+@mixin dis-s {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin dis-a {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin dis-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin dis-c {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin dis-l {
+    display: flex;
+    justify-content: left;
+}
+
+@mixin dis-r {
+    display: flex;
+    justify-content: right;
+}
+
+@mixin dis-w {
+    flex-wrap: wrap;
+}
+
+
+/*长度高度*/
+
+@mixin w10 {
+    width: 10px;
+}
+
+@mixin w20 {
+    width: 20px;
+}
+
+@mixin w30 {
+    width: 30px;
+}
+
+@mixin w40 {
+    width: 40px;
+}
+
+@mixin w50 {
+    width: 50px;
+}
+
+@mixin w60 {
+    width: 60px;
+}
+
+@mixin w70 {
+    width: 70px;
+}
+
+@mixin w80 {
+    width: 80px;
+}
+
+@mixin w90 {
+    width: 90px;
+}
+
+@mixin w100 {
+    width: 100px;
+}
+
+@mixin w200 {
+    width: 200px;
+}
+
+@mixin w250 {
+    width: 250px;
+}
+
+@mixin w300 {
+    width: 300px;
+}
+
+@mixin w400 {
+    width: 400px;
+}
+
+@mixin w500 {
+    width: 500px;
+}
+
+@mixin w600 {
+    width: 600px;
+}
+
+@mixin w700 {
+    width: 700px;
+}
+
+@mixin w800 {
+    width: 800px;
+}
+
+@mixin w {
+    width: 100%;
+}
+
+@mixin h50 {
+    height: 50px;
+}
+
+@mixin h80 {
+    height: 80px;
+}
+
+@mixin h100 {
+    height: 100px;
+}
+
+@mixin h200 {
+    height: 200px;
+}
+
+@mixin h {
+    height: 100%;
+}
+
+
+/*边距*/
+
+@mixin m10 {
+    margin: 10px;
+}
+
+@mixin m15 {
+    margin: 15px;
+}
+
+@mixin m30 {
+    margin: 30px;
+}
+
+@mixin mt5 {
+    margin-top: 5px;
+}
+
+@mixin mt10 {
+    margin-top: 10px;
+}
+
+@mixin mt15 {
+    margin-top: 15px;
+}
+
+@mixin mt20 {
+    margin-top: 20px;
+}
+
+@mixin mt30 {
+    margin-top: 30px;
+}
+
+@mixin mt50 {
+    margin-top: 50px;
+}
+
+@mixin mt100 {
+    margin-top: 100px;
+}
+
+@mixin mb5 {
+    margin-bottom: 5px;
+}
+
+@mixin mb10 {
+    margin-bottom: 10px;
+}
+
+@mixin mb15 {
+    margin-bottom: 15px;
+}
+
+@mixin mb20 {
+    margin-bottom: 20px;
+}
+
+@mixin mb30 {
+    margin-bottom: 30px;
+}
+
+@mixin mb50 {
+    margin-bottom: 50px;
+}
+
+@mixin mb100 {
+    margin-bottom: 100px;
+}
+
+@mixin ml5 {
+    margin-left: 5px;
+}
+
+@mixin ml10 {
+    margin-left: 10px;
+}
+
+@mixin ml15 {
+    margin-left: 15px;
+}
+
+@mixin ml20 {
+    margin-left: 20px;
+}
+
+@mixin ml30 {
+    margin-left: 30px;
+}
+
+@mixin ml50 {
+    margin-left: 50px;
+}
+
+@mixin ml100 {
+    margin-left: 100px;
+}
+
+@mixin mr5 {
+    margin-right: 5px;
+}
+
+@mixin mr10 {
+    margin-right: 10px;
+}
+
+@mixin mr15 {
+    margin-right: 15px;
+}
+
+@mixin mr20 {
+    margin-right: 20px;
+}
+
+@mixin mr30 {
+    margin-right: 30px;
+}
+
+@mixin mr50 {
+    margin-right: 50px;
+}
+
+@mixin mr100 {
+    margin-right: 100px;
+}
+
+@mixin p10 {
+    padding: 10px;
+}
+
+@mixin p15 {
+    padding: 15px;
+}
+
+@mixin p30 {
+    padding: 30px;
+}
+
+@mixin pt5 {
+    padding-top: 5px;
+}
+
+@mixin pt10 {
+    padding-top: 10px;
+}
+
+@mixin pt15 {
+    padding-top: 15px;
+}
+
+@mixin pt20 {
+    padding-top: 20px;
+}
+
+@mixin pt30 {
+    padding-top: 30px;
+}
+
+@mixin pt50 {
+    padding-top: 50px;
+}
+
+@mixin pt100 {
+    padding-top: 100px;
+}
+
+@mixin pb5 {
+    padding-bottom: 5px;
+}
+
+@mixin pb10 {
+    padding-bottom: 10px;
+}
+
+@mixin pb15 {
+    padding-bottom: 15px;
+}
+
+@mixin pb20 {
+    padding-bottom: 20px;
+}
+
+@mixin pb30 {
+    padding-bottom: 30px;
+}
+
+@mixin pb50 {
+    padding-bottom: 50px;
+}
+
+@mixin pb100 {
+    padding-bottom: 100px;
+}
+
+@mixin pl5 {
+    padding-left: 5px;
+}
+
+@mixin pl10 {
+    padding-left: 10px;
+}
+
+@mixin pl15 {
+    padding-left: 15px;
+}
+
+@mixin pl20 {
+    padding-left: 20px;
+}
+
+@mixin pl30 {
+    padding-left: 30px;
+}
+
+@mixin pl50 {
+    padding-left: 50px;
+}
+
+@mixin pl100 {
+    padding-left: 100px;
+}
+
+@mixin pr5 {
+    padding-right: 5px;
+}
+
+@mixin pr10 {
+    padding-right: 10px;
+}
+
+@mixin pr15 {
+    padding-right: 15px;
+}
+
+@mixin pr20 {
+    padding-right: 20px;
+}
+
+@mixin pr30 {
+    padding-right: 30px;
+}
+
+@mixin pr50 {
+    padding-right: 50px;
+}
+
+@mixin pr100 {
+    padding-right: 100px;
+}
+
+@mixin lh {
+    line-height: 30px;
+}
+
+
+/* 边框 */
+
+@mixin border {
+    border: 1px solid #fff;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 5px #d2d2d2;
+    -webkit-box-shadow: 1px 1px 5px #d2d2d2;
+    -moz-box-shadow: 1px 1px 5px #d2d2d2;
+}
+
+
+/* 动画 */
+
+@mixin animated {
+    z-index: 10;
+}
+
+@mixin dis-w {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin dis-b {
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+
+@mixin dis-a {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin bwz {
+    background-color: rgba(255, 229, 100, 0.3);
+    border-color: #e7c000;
+    color: #6b5900;
+    padding: 2rem 1.5rem;
+    line-height: 30px;
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
